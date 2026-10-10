@@ -225,7 +225,9 @@ footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 20px;margi
     var desc=c.description||d.description||'';
     $('r-title').textContent=title;
     if(desc){ $('r-desc').textContent=desc; $('r-desc').hidden=false; }
-    var img=safeURL(c.imageURL||d.image_url||'');
+    var img=safeURL(c.imageURL||c.image_url||d.image_url||'');
+    if(img && img.indexOf('https:')!==0) img=null;
+    if(img){ setMeta('meta[property="og:image"]',img); setMeta('meta[name="twitter:image"]',img); }
     if(img){ var im=$('r-img'); im.src=img; im.alt='Photo of '+title; im.hidden=false; im.onerror=function(){im.hidden=true}; }
     var meta=$('r-meta'); meta.textContent='';
     var t=fmtMinutes(c.timeMinutes); if(t) meta.appendChild(metaItem(ICON.time,t));
