@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A recipe shared from ate</title>
+<meta name="description" content="Someone shared a recipe with you from ate, the AI recipe library for iPhone.">
+<meta name="theme-color" content="#FBF6EE">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="/ate-legal/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/ate-legal/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ate">
+<meta property="og:title" content="A recipe shared from ate">
+<meta property="og:description" content="Open this recipe card, or save it to your own ate library.">
+<meta property="og:image" content="https://melusi-k.github.io/ate-legal/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="The ate logo: an orange ampersand above the word ate">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A recipe shared from ate">
+<meta name="twitter:description" content="Open this recipe card, or save it to your own ate library.">
+<meta name="twitter:image" content="https://melusi-k.github.io/ate-legal/assets/og-cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://ploncuhexmwydjxljuhe.supabase.co" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&display=swap">
+<style>
+:root{--cream:#FBF6EE;--paper:#FFFDF9;--card:#F6E7D2;--espresso:#2A1F18;--orange:#D2643A;--orange-ink:#A9461F;--orange-btn:#B4532A;--orange-soft:#F6DCCB;--ink:#2A1F18;--muted:#6B5A4E;--line:rgba(42,31,24,.09);--radius:20px;--shadow:0 1px 2px rgba(42,31,24,.06),0 14px 36px -14px rgba(42,31,24,.28);--serif:"Fraunces",Georgia,serif;--sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(120% 50% at 50% 0%,#FFF9F1 0%,var(--cream) 60%);color:var(--ink);font:400 1.0625rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--orange-ink);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--espresso);color:#fff;padding:10px 14px;border-radius:10px;z-index:10}.skip:focus{left:8px}
+.wrap{width:min(100% - 32px,680px);margin-inline:auto}
+header{padding:16px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:inline-flex;align-items:flex-end;gap:8px;text-decoration:none;color:var(--ink)}
+.brand img{width:28px;height:auto}
+.brand span{font:500 1.5rem/1 var(--serif);transform:translateY(2px)}
+.pill{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-ink)}
+main{flex:1;padding:8px 0 48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 24px;border-radius:999px;background:var(--orange-btn);color:#fff;font:700 1rem/1 var(--sans);text-decoration:none;border:0;cursor:pointer;box-shadow:0 0 0 5px rgba(210,100,58,.16),0 10px 22px -8px rgba(180,83,42,.6)}
+.btn:hover{background:#A04824}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px rgba(42,31,24,.2)}
+.btn-ghost:hover{background:rgba(42,31,24,.06)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.actions .btn{flex:1 1 200px}
+.recipe{background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.hero-img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--card)}
+.head{background:var(--card);padding:26px 22px 22px}
+.head h1{font:700 clamp(1.8rem,7vw,2.5rem)/1.1 var(--serif);letter-spacing:-.015em;margin:0 0 10px}
+.head p{margin:0 0 14px;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 14px;padding:0;list-style:none;font-weight:500}
+.meta li{display:inline-flex;align-items:center;gap:6px}
+.meta svg{width:18px;height:18px;color:var(--orange-ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.tags li{font-size:.85rem;padding:4px 11px;border-radius:999px;background:rgba(255,253,249,.75);box-shadow:inset 0 0 0 1px rgba(42,31,24,.1)}
+.body{padding:8px 22px 26px}
+.body h2{font:700 .82rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--orange-ink);margin:22px 0 8px}
+.ing{list-style:none;margin:0;padding:0}
+.ing li{display:grid;grid-template-columns:minmax(78px,auto) 1fr;gap:14px;padding:11px 0;border-bottom:1px solid var(--line)}
+.ing li:last-child{border-bottom:0}
+.qty{font-weight:700;font-variant-numeric:tabular-nums}
+.note{color:var(--muted)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:4px 0 16px 46px;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:2px;width:30px;height:30px;border-radius:50%;background:var(--orange);color:var(--espresso);font:700 .95rem/30px var(--sans);text-align:center}
+.time{display:inline-block;margin-left:6px;font-size:.88rem;color:var(--muted);white-space:nowrap}
+.source{margin:10px 0 0;font-size:.95rem;color:var(--muted);overflow-wrap:anywhere}
+.state{background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);padding:40px 24px;text-align:center}
+.state h1{font:700 clamp(1.6rem,6vw,2.1rem)/1.15 var(--serif);margin:12px 0 10px}
+.state p{color:var(--muted);margin:0 auto 6px;max-width:40ch}
+.state .amp{width:64px;margin:0 auto}
+.state .actions{justify-content:center}
+.skel{display:block;border-radius:10px;background:linear-gradient(90deg,#efe3d2 0%,#f8efe3 50%,#efe3d2 100%);background-size:200% 100%;animation:sh 1.3s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.cta{margin-top:28px;background:var(--espresso);color:#F7EFE4;border-radius:var(--radius);padding:24px 22px;display:grid;gap:4px}
+.cta h2{font:700 1.35rem/1.2 var(--serif);margin:0}
+.cta p{margin:0 0 12px;color:#CDBBAA}
+.cta a.link{color:#F0A37F;font-weight:700}
+footer{padding:24px 0 36px;text-align:center;font-size:.9rem;color:var(--muted)}
+footer a{color:var(--muted)}
+footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 20px;margin-bottom:8px}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.skel{animation:none}}
+@media (min-width:640px){.head{padding:34px 34px 26px}.body{padding:10px 34px 32px}}
+@media print{header,footer,.actions,.cta{display:none}body{background:#fff}.recipe{box-shadow:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to recipe</a>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/ate-legal/" aria-label="ate home"><img src="/ate-legal/assets/ate-mark.png" alt="" width="28" height="29"><span>ate</span></a>
+    <span class="pill">Shared recipe</span>
+  </div>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+  <div id="status" class="sr" role="status" aria-live="polite">Loading recipe…</div>
+
+  <!-- Loading -->
+  <section id="loading" class="recipe" aria-hidden="true">
+    <div class="head">
+      <span class="skel" style="height:34px;width:80%;margin-bottom:12px"></span>
+      <span class="skel" style="height:16px;width:95%;margin-bottom:8px"></span>
+      <span class="skel" style="height:16px;width:60%"></span>
+    </div>
+    <div class="body" style="padding-top:24px">
+      <span class="skel" style="height:14px;width:30%;margin-bottom:16px"></span>
+      <span class="skel" style="height:16px;width:90%;margin-bottom:12px"></span>
+      <span class="skel" style="height:16px;width:75%;margin-bottom:12px"></span>
+      <span class="skel" style="height:16px;width:82%"></span>
+    </div>
+  </section>
+
+  <!-- Recipe -->
+  <article id="recipe" class="recipe" hidden aria-labelledby="r-title">
+    <img id="r-img" class="hero-img" alt="" hidden>
+    <div class="head">
+      <h1 id="r-title"></h1>
+      <p id="r-desc" hidden></p>
+      <ul class="meta" id="r-meta" aria-label="Recipe details"></ul>
+      <ul class="tags" id="r-tags" aria-label="Tags" hidden></ul>
+    </div>
+    <div class="body">
+      <section aria-labelledby="h-ing" id="s-ing">
+        <h2 id="h-ing">Ingredients</h2>
+        <ul class="ing" id="r-ing"></ul>
+      </section>
+      <section aria-labelledby="h-steps" id="s-steps">
+        <h2 id="h-steps">Steps</h2>
+        <ol class="steps" id="r-steps"></ol>
+      </section>
+      <p class="source" id="r-source" hidden></p>
+    </div>
+  </article>
+
+  <!-- Not found / expired -->
+  <section id="notfound" class="state" hidden aria-labelledby="nf-title">
+    <img class="amp" src="/ate-legal/assets/ate-mark.png" alt="" width="64" height="66">
+    <h1 id="nf-title">This recipe isn't on the table anymore</h1>
+    <p id="nf-msg">The link may have expired, been removed, or been mistyped. Ask whoever sent it to share it again from ate.</p>
+  </section>
+
+  <!-- Error -->
+  <section id="error" class="state" hidden aria-labelledby="er-title">
+    <img class="amp" src="/ate-legal/assets/ate-mark.png" alt="" width="64" height="66">
+    <h1 id="er-title">We couldn't load this recipe</h1>
+    <p>Check your connection and try again. If it keeps happening, the recipe service may be briefly unavailable.</p>
+    <div class="actions"><button class="btn" type="button" id="retry">Try again</button></div>
+  </section>
+
+  <div class="actions" id="actions">
+    <a class="btn" id="open-app" href="#" hidden>Open in ate</a>
+    <a class="btn btn-ghost" href="/ate-legal/">Get the beta</a>
+  </div>
+
+  <aside class="cta" aria-labelledby="cta-title">
+    <h2 id="cta-title">Turn any recipe into a card like this</h2>
+    <p>ate makes clean, editable recipe cards from links, captions, screenshots and photos, right on your iPhone. It's in private beta.</p>
+    <a class="link" href="/ate-legal/">Learn about ate and join the beta →</a>
+  </aside>
+</main>
+
+<footer>
+  <nav aria-label="Legal"><a href="/ate-legal/">ate</a><a href="/ate-legal/privacy.html">Privacy Policy</a><a href="/ate-legal/terms.html">Terms of Use</a></nav>
+  <div>Shared from ate · read-only copy</div>
+</footer>
+
+<script>
+(function(){
+  var API='https://ploncuhexmwydjxljuhe.supabase.co';
+  // Public, RLS-protected publishable key (safe for client use).
+  var KEY='sb_publishable_iiLYpvTdIEhYk2FsvJlzTQ_3T4w77mv';
+  var $=function(id){return document.getElementById(id)};
+  var status=$('status');
+
+  function getSlug(){
+    var q=new URLSearchParams(location.search).get('s');
+    if(!q){var m=location.pathname.match(/\/r\/([A-Za-z0-9_-]+)\/?$/); if(m) q=m[1];}
+    if(!q){var h=location.hash.replace(/^#\/?/,''); if(/^[A-Za-z0-9_-]{4,64}$/.test(h)) q=h;}
+    return q && /^[A-Za-z0-9_-]{4,64}$/.test(q) ? q : null;
+  }
+
+  function show(id){
+    ['loading','recipe','notfound','error'].forEach(function(x){$(x).hidden=(x!==id)});
+    $('loading').setAttribute('aria-hidden', id==='loading'?'true':'true');
+  }
+  function setMeta(sel,val){var el=document.querySelector(sel); if(el) el.setAttribute('content',val);}
+  function setTitle(t,d){
+    document.title=t;
+    setMeta('meta[property="og:title"]',t); setMeta('meta[name="twitter:title"]',t);
+    if(d){setMeta('meta[name="description"]',d); setMeta('meta[property="og:description"]',d); setMeta('meta[name="twitter:description"]',d);}
+  }
+
+  var FR={0.125:'⅛',0.25:'¼',0.333:'⅓',0.5:'½',0.667:'⅔',0.75:'¾'};
+  function fmtQty(q){
+    if(q===null||q===undefined||q===''||isNaN(q)||Number(q)===0) return '';
+    q=Number(q); var w=Math.floor(q), f=Math.round((q-w)*1000)/1000, s='';
+    for(var k in FR){ if(Math.abs(f-Number(k))<0.02){ s=FR[k]; break; } }
+    if(s) return (w?w+' ':'')+s;
+    return String(Math.round(q*100)/100);
+  }
+  var SKIP_UNITS=/^(pc|pcs|piece|pieces|whole|x|unit|units|each)$/i;
+  function fmtTime(sec){
+    if(!sec||sec<=0) return '';
+    if(sec<60) return sec+' sec';
+    var m=Math.round(sec/60); if(m<60) return m+' min';
+    var h=Math.floor(m/60), r=m%60; return h+' hr'+(r?' '+r+' min':'');
+  }
+  function fmtMinutes(m){ if(!m||m<=0) return ''; if(m<60) return m+' min'; var h=Math.floor(m/60),r=m%60; return h+' hr'+(r?' '+r+' min':''); }
+  function el(tag,cls,text){var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e;}
+  function safeURL(u){ try{ var x=new URL(u); return (x.protocol==='https:'||x.protocol==='http:')?x.href:null; }catch(e){ return null; } }
+  var ICON={time:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+            serv:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3.2 3.2 0 0 1 0 6.3M21 20c0-2.7-1.6-5-4-5.8"/></svg>'};
+  function metaItem(icon,label){var li=el('li'); li.innerHTML=icon; li.appendChild(el('span',null,label)); return li;}
+
+  function render(d, slug){
+    var c=d.card||{};
+    var title=c.title||d.title||'Untitled recipe';
+    var desc=c.description||d.description||'';
+    $('r-title').textContent=title;
+    if(desc){ $('r-desc').textContent=desc; $('r-desc').hidden=false; }
+    var img=safeURL(c.imageURL||d.image_url||'');
+    if(img){ var im=$('r-img'); im.src=img; im.alt='Photo of '+title; im.hidden=false; im.onerror=function(){im.hidden=true}; }
+    var meta=$('r-meta'); meta.textContent='';
+    var t=fmtMinutes(c.timeMinutes); if(t) meta.appendChild(metaItem(ICON.time,t));
+    if(c.servings) meta.appendChild(metaItem(ICON.serv,c.servings+(c.servings==1?' serving':' servings')));
+    meta.hidden=!meta.children.length;
+    var tags=$('r-tags'); tags.textContent='';
+    (c.tags||[]).forEach(function(x){ if(x) tags.appendChild(el('li',null,x)); });
+    tags.hidden=!tags.children.length;
+
+    var ing=$('r-ing'); ing.textContent='';
+    (c.ingredients||[]).forEach(function(i){
+      if(typeof i==='string') i={name:i};
+      var li=el('li'); var q=fmtQty(i.quantity); var u=(i.unit&&!SKIP_UNITS.test(i.unit))?i.unit:'';
+      li.appendChild(el('span','qty',[q,u].filter(Boolean).join(' ')));
+      var n=el('span',null,i.name||''); if(i.notes){ n.appendChild(el('span','note',' — '+i.notes)); }
+      li.appendChild(n); ing.appendChild(li);
+    });
+    $('s-ing').hidden=!ing.children.length;
+
+    var st=$('r-steps'); st.textContent='';
+    (c.steps||[]).slice().sort(function(a,b){return (a.order||0)-(b.order||0)}).forEach(function(s){
+      if(typeof s==='string') s={instruction:s};
+      var li=el('li',null,s.instruction||s.text||'');
+      var tm=fmtTime(s.timeSeconds); if(tm) li.appendChild(el('span','time','('+tm+')'));
+      st.appendChild(li);
+    });
+    $('s-steps').hidden=!st.children.length;
+
+    var src=safeURL(c.sourceURL||d.source_url||'');
+    if(src){ var p=$('r-source'); p.textContent='Original recipe: '; var a=el('a',null,new URL(src).hostname.replace(/^www\./,'')); a.href=src; a.rel='noopener nofollow'; a.target='_blank'; p.appendChild(a); p.hidden=false; }
+
+    setTitle(title+' · shared from ate', desc||('A recipe shared from ate: '+title));
+    show('recipe'); status.textContent='Recipe loaded: '+title;
+  }
+
+  function notFound(expired){
+    if(expired){ $('nf-title').textContent='This share link has expired'; }
+    setTitle('Recipe not found · ate'); show('notfound'); status.textContent=$('nf-title').textContent;
+  }
+  function failed(){ setTitle('Couldn\u2019t load recipe · ate'); show('error'); status.textContent='Could not load the recipe.'; }
+
+  function isExpired(d){ var e=d&&(d.expires_at||d.expiresAt); return e && new Date(e).getTime()<Date.now(); }
+
+  function viaREST(slug){
+    return fetch(API+'/rest/v1/shared_recipes?slug=eq.'+encodeURIComponent(slug)+'&select=*',{headers:{apikey:KEY,Authorization:'Bearer '+KEY,Accept:'application/json'}})
+      .then(function(r){ if(!r.ok) throw new Error('rest '+r.status); return r.json(); })
+      .then(function(rows){ return rows && rows[0] ? {status:200,data:rows[0]} : {status:404}; });
+  }
+  function load(slug){
+    show('loading'); status.textContent='Loading recipe…';
+    fetch(API+'/functions/v1/get-shared-recipe?slug='+encodeURIComponent(slug),{headers:{apikey:KEY,Accept:'application/json'}})
+      .then(function(r){
+        if(r.status===404||r.status===400) return {status:404};
+        if(r.status===410) return {status:410};
+        if(!r.ok) throw new Error('fn '+r.status);
+        return r.json().then(function(d){return {status:200,data:d}});
+      })
+      .catch(function(){ return viaREST(slug); })
+      .then(function(res){
+        if(res.status===410) return notFound(true);
+        if(res.status!==200||!res.data||res.data.error) return notFound(false);
+        if(isExpired(res.data)) return notFound(true);
+        render(res.data, slug);
+      })
+      .catch(failed);
+  }
+
+  var slug=getSlug();
+  var ios=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  if(slug&&ios){ var o=$('open-app'); o.href='ate://recipe/'+encodeURIComponent(slug); o.hidden=false; }
+  if(slug&&location.pathname.indexOf('/r/')>-1&&!new URLSearchParams(location.search).get('s')&&history.replaceState){
+    // Normalise /r/<slug> paths (served via 404.html) into the canonical ?s= form.
+    try{ history.replaceState(null,'','/ate-legal/r/?s='+encodeURIComponent(slug)); }catch(e){}
+  }
+  $('retry').addEventListener('click',function(){ load(slug); });
+  if(!slug){ $('nf-msg').textContent='This link is missing its recipe code. Ask whoever sent it to share it again from ate.'; notFound(false); }
+  else load(slug);
+})();
+</script>
+</body>
+</html>

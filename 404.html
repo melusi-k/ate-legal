@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · ate</title>
+<meta name="robots" content="noindex">
+<script>
+// GitHub Pages serves this file for unknown paths. Turn /ate-legal/r/<slug> share links
+// into the static shared-recipe page at /ate-legal/r/?s=<slug>.
+(function(){
+  var m=location.pathname.match(/^\/ate-legal\/r\/([A-Za-z0-9_-]{4,64})\/?$/);
+  if(m){ location.replace('/ate-legal/r/?s='+encodeURIComponent(m[1])+location.hash); }
+})();
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/ate-legal/assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,700&display=swap">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#FBF6EE;color:#2A1F18;font:400 1.0625rem/1.6 "DM Sans",system-ui,sans-serif;text-align:center;padding:24px}
+main{max-width:420px}
+img{width:72px;height:auto}
+h1{font:700 2rem/1.15 "Fraunces",Georgia,serif;margin:16px 0 10px}
+p{color:#6B5A4E;margin:0 0 24px}
+a.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;background:#B4532A;color:#fff;font-weight:700;text-decoration:none}
+a.btn:focus-visible{outline:3px solid #D2643A;outline-offset:3px}
+</style>
+</head>
+<body>
+<main id="nf">
+  <img src="/ate-legal/assets/ate-mark.png" alt="" width="72" height="74">
+  <h1>Nothing cooking here</h1>
+  <p>We couldn't find that page. It may have moved, or the link may be mistyped.</p>
+  <a class="btn" href="/ate-legal/">Go to the ate home page</a>
+</main>
+</body>
+</html>
