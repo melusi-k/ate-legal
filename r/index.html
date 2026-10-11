@@ -182,8 +182,8 @@ footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 20px;margi
   function getSlug(){
     var q=new URLSearchParams(location.search).get('s');
     if(!q){var m=location.pathname.match(/\/r\/([A-Za-z0-9_-]+)\/?$/); if(m) q=m[1];}
-    if(!q){var h=location.hash.replace(/^#\/?/,''); if(/^[A-Za-z0-9_-]{4,64}$/.test(h)) q=h;}
-    return q && /^[A-Za-z0-9_-]{4,64}$/.test(q) ? q : null;
+    if(!q){var h=location.hash.replace(/^#\/?/,''); if(/^[A-Za-z0-9]{4,40}$/.test(h)) q=h;}
+    return q && /^[A-Za-z0-9]{4,40}$/.test(q) ? q : null;
   }
 
   function show(id){
@@ -271,11 +271,6 @@ footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 20px;margi
 
   function isExpired(d){ var e=d&&(d.expires_at||d.expiresAt); return e && new Date(e).getTime()<Date.now(); }
 
-  function viaREST(slug){
-    return fetch(API+'/rest/v1/shared_recipes?slug=eq.'+encodeURIComponent(slug)+'&select=*',{headers:{apikey:KEY,Authorization:'Bearer '+KEY,Accept:'application/json'}})
-      .then(function(r){ if(!r.ok) throw new Error('rest '+r.status); return r.json(); })
-      .then(function(rows){ return rows && rows[0] ? {status:200,data:rows[0]} : {status:404}; });
-  }
   function load(slug){
     show('loading'); status.textContent='Loading recipe…';
     fetch(API+'/functions/v1/get-shared-recipe?slug='+encodeURIComponent(slug),{headers:{apikey:KEY,Accept:'application/json'}})
@@ -285,7 +280,6 @@ footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 20px;margi
         if(!r.ok) throw new Error('fn '+r.status);
         return r.json().then(function(d){return {status:200,data:d}});
       })
-      .catch(function(){ return viaREST(slug); })
       .then(function(res){
         if(res.status===410) return notFound(true);
         if(res.status!==200||!res.data||res.data.error) return notFound(false);
